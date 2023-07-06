@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../mixins/media_queries";
+@import "../mixins/functions.scss";
+
+:root {
+  font-family: Montserrat, sans-serif;
+}

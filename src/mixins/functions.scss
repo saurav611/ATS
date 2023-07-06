@@ -1,0 +1,16 @@
+@function strip-units($value) {
+  @return ($value / ($value * 0+1));
+}
+$rem-base: 16px !default;
+
+@function rem($pxValue) {
+  @if not unitless($pxValue) {
+    $pxValue: strip-units($pxValue);
+  }
+  $base: $rem-base;
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+
+  @return ($pxValue / $base) * 1rem;
+}
