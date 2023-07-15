@@ -6,7 +6,6 @@ const bottomNavList = [
   { name: 'Setting', Logo: 'setting' },
   { name: 'Login', Logo: 'profile.gif', isGif: true }
 ];
-let dfdfxxxx = [];
 export default function BottomNav() {
   return (
     <div
