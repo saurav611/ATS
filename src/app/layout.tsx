@@ -1,5 +1,7 @@
+import Header from "@/components/Common/Header";
 import "./globals.scss";
 import { Montserrat } from "next/font/google";
+import BottomNav from "@/components/Common/BottomNav";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -15,7 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+
+        <BottomNav />
+      </body>
     </html>
   );
 }
