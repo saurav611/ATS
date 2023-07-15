@@ -1,19 +1,20 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 const bottomNavList = [
-  { name: "Home", Logo: "Home" },
-  { name: "Notifications", Logo: "notification" },
-  { name: "Setting", Logo: "setting" },
-  { name: "Login", Logo: "profile.gif", isGif: true },
+  { name: 'Home', Logo: 'Home' },
+  { name: 'Notifications', Logo: 'notification' },
+  { name: 'Setting', Logo: 'setting' },
+  { name: 'Login', Logo: 'profile.gif', isGif: true }
 ];
+let sdsd = [];
 export default function BottomNav() {
   return (
     <div
       className="fixed bottom-0 right-0 left-0 z-10 bg-white py-3 px-5 rounded-t-[1.25rem]"
-      style={{ boxShadow: "0px -1px 4px 0px rgba(0, 0, 0, 0.25)" }}
+      style={{ boxShadow: '0px -1px 4px 0px rgba(0, 0, 0, 0.25)' }}
     >
-      <div className="flex  items-center">
-        {bottomNavList.map((item) => (
+      <div className="flex items-center">
+        {bottomNavList.map(item => (
           <div
             key={item.name}
             className="flex flex-1  flex-col items-center shrink-0 cursor-pointer"
