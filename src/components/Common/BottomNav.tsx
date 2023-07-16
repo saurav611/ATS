@@ -9,7 +9,7 @@ const bottomNavList = [
 export default function BottomNav() {
   return (
     <div
-      className="fixed bottom-0 right-0 left-0 z-10 bg-white py-3 px-5 rounded-t-[1.25rem]"
+      className="fixed bottom-0 right-0 left-0 z-10 bg-white py-3 px-5 rounded-t-[1.25rem] laptop:hidden"
       style={{ boxShadow: '0px -1px 4px 0px rgba(0, 0, 0, 0.25)' }}
     >
       <div className="flex items-center">
