@@ -13,11 +13,11 @@ export default function Navbar({ customClass }: { customClass: string }) {
     <nav
       className={`${customClass} w-full box-border laptop:w-[243px]  laptop:fixed laptop:left-0 shadow-sm`}
     >
-      <div className="flex overflow-x-auto w-full py-2 px-4 border border-grey50 rounded-t-[0.625rem] laptop:h-[90vh] max-laptop:bg-grey10 laptop:flex-col laptop:items-center laptop:bg-white">
+      <div className="flex overflow-x-auto w-full py-2 px-4 border border-grey50 rounded-t-[0.625rem] laptop:h-[90vh] max-laptop:bg-grey10 laptop:flex-col laptop:items-center laptop:bg-white laptop:pt-7">
         {navList.map(item => (
           <div
             key={item.name}
-            className="flex items-center shrink-0  max-laptop:mr-10 cursor-pointer laptop:min-w-[120px] laptop:mt-10"
+            className="flex items-center shrink-0  max-laptop:mr-10 cursor-pointer laptop:min-w-[120px] laptop:mb-10"
           >
             <Image
               src={`/iconsNavbar/${item.Logo}.svg`}
