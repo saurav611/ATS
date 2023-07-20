@@ -1,7 +1,10 @@
-import { MouseEventHandler } from "react"
+import { MouseEventHandler } from 'react';
 
-export interface CustomButtonProps{
-    title:string
-    containerstyle?:string
-    handleclick?:MouseEventHandler<HTMLButtonElement>
+export interface CustomButtonProps {
+  type: string;
+  title: string;
+  containerStyle?: string;
+  handleClick?: MouseEventHandler<HTMLButtonElement>;
+  disabled?: boolean;
+  customtitle?: string;
 }

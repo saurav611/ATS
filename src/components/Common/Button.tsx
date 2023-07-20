@@ -5,16 +5,18 @@ const Button = ({
   title,
   containerStyle,
   handleClick,
-  disabled
+  disabled,
+  customClass,
+  types
 }: CustomButtonProps) => {
   return (
     <button
       disabled={disabled}
-      type={'button'}
+      type={types}
       className={` ${containerStyle}`}
       onClick={handleClick}
     >
-      <span className={'flex-1'}>{title}</span>
+      <span className={`${customClass}flex-1`}>{title}</span>
     </button>
   );
 };
