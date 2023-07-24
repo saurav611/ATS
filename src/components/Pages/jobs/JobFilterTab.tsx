@@ -1,3 +1,4 @@
+import Button from '@/components/Common/Button';
 import RadioButton from '@/components/Common/RadioButton';
 import React from 'react';
 
@@ -8,7 +9,12 @@ export default function JobFilterTab() {
       style={{ boxShadow: '0px -1px 4px 0px rgba(0, 0, 0, 0.25)' }}
     >
       <div className="pb-[0.9375rem] border-b border-grey100 flex">
-        <div className="pr-3 border-r border-grey100">ds</div>
+        <div className="pr-3 border-r border-grey100 flex justify-center items-center">
+          <Button
+            title={'+ Add new job'}
+            containerStyle="rounded-[5px] bg-blue50 text-white font-[350] w-[11.25rem] h-[2.1875rem]"
+          />
+        </div>
         <div className="px-3 border-r border-grey100">
           <p className="text-xs">Job status</p>
           <div className="flex mt-[0.9375rem]">
