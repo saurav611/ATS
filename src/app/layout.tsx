@@ -18,10 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} laptop:bg-grey50`}>
+      <body className={`${inter.className} lg:bg-grey50`}>
         <Header />
         <Navbar customClass={'mt-7'} />
-        <div className="laptop:ml-[15.3125rem]">{children}</div>
+        <div className="lg:ml-[15.3125rem]">{children}</div>
 
         <BottomNav />
       </body>

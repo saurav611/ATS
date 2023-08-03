@@ -1,6 +1,8 @@
 'use client';
+
 import Input from '@/components/Common/Input';
 import JobFilterTab from '@/components/Pages/jobs/JobFilterTab';
+import { Button } from '@/components/ui/button';
 import React, { useState } from 'react';
 
 export default function Jobs() {
@@ -21,6 +23,7 @@ export default function Jobs() {
             setValue(value);
           }}
         />
+        <Button variant={'destructive'}>Click me</Button>
       </div>
     </div>
   );

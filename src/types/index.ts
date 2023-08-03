@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { MouseEventHandler, ReactNode } from 'react';
 
 export interface CustomButtonProps {
@@ -7,7 +8,7 @@ export interface CustomButtonProps {
   disabled?: boolean;
   customClass?: string;
   Children?: ReactNode;
-  types: 'button' | 'submit' | 'reset' | undefined;
+  types?: 'button' | 'submit' | 'reset' | undefined;
 }
 
 export interface customJobcard {
@@ -46,4 +47,16 @@ export interface CandidateInfoProp {
   MobNumber: string;
   Skills?: string[];
   Experience?: string;
+}
+export interface dropdownProps {
+  renderElement: (item: any) => JSX.Element;
+  placeholder: string;
+  dataList: any[];
+  keyGenerator: (item: any) => string;
+  toggleDropdown?: boolean;
+  handleDataSelection: (item: any) => void;
+  selectedValue?: string | number;
+  customClass?: string;
+  selectedKeyForCheck?: string;
+  disbaled?: boolean;
 }
