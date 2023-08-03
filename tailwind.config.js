@@ -19,10 +19,12 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       black50: '#15153E',
+      black150: '#303030',
       black200: '#1E1E1E',
       white: colors.white,
       purple: '#834D9E',
       grey10: '#FDFDFD',
+      grey15: '#A9A9A9',
       grey50: '#F5F5F5',
       grey100: '#BDBDBD',
       grey200: '#8A8A8A',
@@ -30,6 +32,8 @@ module.exports = {
       blue50: '#369FFF',
       blue150: '#597EDD',
       greenHead: '#355A63',
+      greenlight: '#4D7815',
+      green120: '#8AC53E',
       green: {
         default: '#355A63'
       }
@@ -41,8 +45,10 @@ module.exports = {
       laptop: '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      desktop: '1280px'
+      desktop: '1280px',
       // => @media (min-width: 1280px) { ... }
+      mobile: '576px'
+      // => @media (min-width: 576px) { ... }
     }
   },
   plugins: []

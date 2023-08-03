@@ -23,7 +23,7 @@ const JobCard = ({
         </span>
         <div className="laptop:mr-[2rem] mobile:mr-[1.3rem]">
           <Image
-            src={`/jobcardicon/search.svg`}
+            src={`/jobcardicon/Search.svg`}
             alt={'search'}
             width={13}
             height={15}
@@ -33,21 +33,21 @@ const JobCard = ({
 
       <div className="flex flex-row  laptop:mt-[0.125rem] mobile:mt-[0.125rem]  ">
         <div>
-          <span className="flex py-2  laptop:ml-[2.25rem] mobile:ml-[1rem] text-grey15  font-[31.2rem] text-[0.75rem]">
+          <span className="flex   laptop:ml-[2.25rem] mobile:ml-[1rem] text-grey15  font-[31.2rem] text-[0.75rem]">
             {Location}
           </span>
         </div>
-        <div className="flex laptop:mx-[0.31rem]  mobile:mx-[0.31rem] ">
+        <div className={`flex laptop:mx-[0.31rem] ${style.line}  `}>
           {
             <Image
-              src={`/jobcardicon/verticalLine.svg`}
+              src={`/jobcardicon/VerticaLine.svg`}
               alt="line"
-              width={2}
+              width={1}
               height={0}
             ></Image>
           }
         </div>
-        <span className=" flex    text-grey15 font-[31.2rem] text-[0.75rem] py-2">
+        <span className=" flex    text-grey15 font-[31.2rem] text-[0.75rem] ">
           {JobType}
         </span>
       </div>

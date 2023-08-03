@@ -16,7 +16,7 @@ export default function BottomNav() {
         {bottomNavList.map(item => (
           <div
             key={item.name}
-            className="flex flex-1  flex-col items-center shrink-0 cursor-pointer"
+            className="flex flex-col items-center flex-1 cursor-pointer shrink-0"
           >
             <Image
               src={`/iconsNavbar/${
