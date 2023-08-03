@@ -5,7 +5,7 @@ import React from 'react';
 export default function JobFilterTab() {
   return (
     <div
-      className="bg-white py-[0.6875rem] px-5 rounded-lg"
+      className="bg-white py-[0.6875rem] px-5 rounded-lg max-lg:hidden"
       style={{ boxShadow: '0px -1px 4px 0px rgba(0, 0, 0, 0.25)' }}
     >
       <div className="pb-[0.9375rem] border-b border-grey100 flex">
