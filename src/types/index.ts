@@ -1,13 +1,13 @@
 import { MouseEventHandler, ReactNode } from 'react';
 
 export interface CustomButtonProps {
-  types: 'button' | 'submit' | 'reset' | undefined;
   title: string;
   containerStyle?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
   disabled?: boolean;
   customClass?: string;
   Children?: ReactNode;
+  types: 'button' | 'submit' | 'reset' | undefined;
 }
 
 export interface customJobcard {

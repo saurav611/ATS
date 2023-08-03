@@ -2,6 +2,7 @@ import Header from '@/components/Common/Header';
 import './globals.scss';
 import { Montserrat } from 'next/font/google';
 import BottomNav from '@/components/Common/BottomNav';
+import Navbar from '@/components/Common/Navbar';
 
 const inter = Montserrat({ subsets: ['latin'] });
 
@@ -19,7 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} laptop:bg-grey50`}>
         <Header />
-        {children}
+        <Navbar customClass={'mt-7'} />
+        <div className="laptop:ml-[15.3125rem]">{children}</div>
 
         <BottomNav />
       </body>
