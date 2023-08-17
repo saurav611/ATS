@@ -41,22 +41,20 @@
 
 .SkillsBaground {
   border-radius: 5px;
-  background: var(--background-typography, #bdbdbd);
+  background: black;
 }
 .InterviewBaground {
   border-radius: 5px;
-  border: 1px solid var(--primary-369-fff, #369fff);
+  border: 1px solid #1f1f21;
 }
 
 .HireBaground {
   border-radius: 5px;
-  opacity: 0.10000000149011612;
-  background: var(--action-color-8-ac-53-e, #8ac53e);
+  opacity: 0.8;
 }
 .RejectBaground {
   border-radius: 5px;
-  opacity: 0.10000000149011612;
-  background: #ec4d4d;
+  opacity: 0.5;
 }
 
 .blueBaground {
@@ -65,4 +63,41 @@
 
   /* 1*1 Shadow */
   box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.CandidateForm {
+  border-radius: 10px 10px 0px 0px;
+  background: white;
+  /* 1*1 Shadow */
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.closeStyle {
+  border-radius: 0px 70px 70px 0px;
+  background: var(--bg-typo-091-fe-1, #091fe1);
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tabbutton {
+  padding: 5px 2px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.active {
+  color: #3498db; /* Active tab text color */
+}
+
+.indicator {
+  padding-left: 20px;
+  width: 70px;
+  height: 2px;
+  background-color: #3498db; /* Indicator color */
+  transition: transform 0.3s;
+}
+
+.right {
+  transform: translateX(250%);
 }

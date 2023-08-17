@@ -7,12 +7,16 @@ interface FloatingLabelInputProps {
   name: string;
   handleInputChange: (value: string | number) => void;
   inputValue: string | number;
+  customInput?: string;
+  customLabel?: string;
 }
 
 const FloatingLabelInput: React.FC<FloatingLabelInputProps> = ({
   label,
   handleInputChange,
   inputValue,
+  customInput,
+  customLabel,
   ...rest
 }) => {
   const [isFocused, setIsFocused] = useState(false);
@@ -31,8 +35,8 @@ const FloatingLabelInput: React.FC<FloatingLabelInputProps> = ({
   return (
     <div className="relative">
       <input
-        className={`w-full px-2 py-1 border rounded focus:outline-none ${
-          isFocused ? 'border-blue150' : 'border-grey100'
+        className={`${customInput}  px-2 py-1 border rounded focus:outline-none text-xs ${
+          isFocused ? 'border-black' : 'border-grey100'
         }`}
         {...rest}
         onFocus={handleInputFocus}
@@ -42,9 +46,9 @@ const FloatingLabelInput: React.FC<FloatingLabelInputProps> = ({
       />
       {label && (
         <label
-          className={`transition-all absolute left-2 ${
-            isFocused ? '-top-2.5 text-blue150' : 'top-1 text-grey200'
-          } px-1 text-sm bg-white pointer-events-none`}
+          className={`${customLabel} transition-all absolute left-2 ${
+            isFocused ? '-top-2.5 text-black' : 'top-1 text-grey200'
+          } px-1 text-xs bg-white pointer-events-none`}
         >
           {label}
         </label>

@@ -70,9 +70,12 @@ module.exports = {
         blue50: '#369FFF',
         blue150: '#597EDD',
         greenHead: '#355A63',
+        greenlight: '#4D7815',
+        green120: '#8AC53E',
         green: {
           default: '#355A63'
-        }
+        },
+        red14: '#EC4D4D'
       },
       borderRadius: {
         lg: 'var(--radius)',

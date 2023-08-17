@@ -29,7 +29,7 @@ const SelectField = ({
     <div>
       <label className={LabelStyle}>{label}</label>
       <select
-        className={`${SelectStyle} laptop:w-[12.5rem] h-[1.7rem]`}
+        className={`${SelectStyle} `}
         value={value}
         onChange={onChange}
         placeholder={PlaceHolder}
